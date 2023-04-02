@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    body{
+        background-color: rgb(92, 92, 92);
+    }
+    .page1
+    {  
+        margin: auto;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        background-color: rgb(134, 176, 213);
+        height: 600px;
+        width: 500px;
+        border: solid 0px;
+        border-radius: 20px ;
+        box-shadow: 0px 0px 26px black;
+          
+    }
+    .page1 header
+    {
+        background-color: rgb(56, 71, 139);
+        width: auto;
+        height: fit-content;
+        padding: 1rem;
+    }
+
+    @keyframes pageimg
+    {
+        from{ height: 120px; width: 120px;}
+        to{}
+    }
+    .page1 header img
+    {
+        animation-name:  pageimg;
+        animation-duration: 2s;
+        display: block;
+        height: 100px; width: 100px;
+        margin-left: auto;
+        margin-right: auto;    
+    }
+    @keyframes pagetext
+    {
+        from{color: rgb(213, 216, 229);padding-top: 2rem;}
+        to{}
+    }
+    .page1 p
+    {
+        animation-name: pagetext;
+        animation-duration: 1.2s;
+        transition: all ease;
+        font-size: 1.1rem;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        margin-top: 3rem;
+    }
+    
+    .page1 button 
+    {
+        text-align: center;
+        animation-name: joinasbutton;
+        animation-duration: 2s;
+        display: block;
+        margin: auto;
+        margin-top: 5rem;
+        padding: 12px 20px;
+        background-color: rgb(75, 116, 178);
+        color: white;
+        font-size: 1.2rem;
+        border: solid 0px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 3px rgb(0, 0, 0);
+        cursor: pointer;
+        transition: all ease;
+    }
+    
+    .page1 button::after
+    {
+        content: '>>';
+        padding-left: 18px;
+        position: absolute;
+        opacity: 0; 
+        transition-duration: 0s;   
+    }
+    .page1 button:hover{
+        padding-right: 48px;
+        
+        transition-duration: 0.6s;
+        box-shadow: 0px 0px 10px rgb(181, 230, 255);
+        
+    }
+    .page1 button:hover::after{
+        opacity: 1;
+        padding-right: 40px;
+        transition-duration: 0.5s;
+    }
+    
+    
+</style>
+
+<script>
+</script>
+
+</head>
+
+<body>
+
+    <div class="page1">
+        <header>
+            <img src="logo.png" alt="ecell log" >
+        </header>
+        <p>
+            "People often find it a matter of shame to admit 
+            if they do something wrong, but Acceptance of 
+            mistakes help to build a good personality. 
+            The driving force behind the Establishment of Entrepreneurship Cell 
+            was to Create an Entrepreneurial Environment on our University Campus.
+            I believe that you will add value to our student-run organization,
+            Apply your creative Ideas, build Solutions and improve yourself !
+        </p>
+        <button 
+        onclick="window.location.href='index.html'">
+            Join As Volunteer
+        </button>
+    </div>
+    
+</body>
+</html>

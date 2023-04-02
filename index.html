@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    
+    .mainpage
+    {
+        
+        width:/* 38% */ 60%;
+        margin:auto; 
+        height:fit-content;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0px 0px 2px rgb(85, 85, 85);
+    }
+    
+
+    .section1
+    {
+        position: relative;
+        z-index: 0;
+        height: 160px;
+        width:auto;
+        padding:1px;
+        background-color:rgb(0, 0, 255);
+        text-align: center;
+    }
+    .section1 img
+    {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height: 88px; width:88px;
+    }
+
+    @keyframes sec2anim
+    {
+        from{border-radius: 0px; color: white;}
+        to{ background-color: white;}
+        
+    }
+    .section2
+    {
+        animation-name: sec2anim;
+        animation-duration: 0.5s;
+        position: relative;   
+        z-index: 1;
+        margin-top: -50px;
+        padding: 3px;
+        height: fit-content;
+        width: auto;
+        background-color: rgb(255, 255, 255);
+        text-align: center;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+        font-size: larger;
+        border: solid 10px white;
+        border-radius: 40px 40px 1px 1px;
+    }
+    @keyframes congrats
+    {
+        from {margin-top: 50px;color: white;font-size: 1rem;}
+        to {color: black;}
+    }
+    .section2 h1{
+        display: block;
+        font-size: 1.3rem;
+        animation-name: congrats;
+        animation-duration: 0.5s;
+    }
+    .section2 h3{
+        
+        display: block;
+        font-size: 1.6rem;
+    }
+    .section2 p{
+        display: block;
+        font-size: 1rem;
+        color: rgb(133, 133, 133);
+        text-align: center;
+        
+    }
+    @keyframes buttanim
+    {
+        from{margin-top: 4rem; background-color: blue;}
+        to{padding:10px 25px ;}
+    }
+    .section2 button 
+    {
+
+        animation-name: buttanim;
+        animation-duration: 0.5s;
+        background-color: blue;
+        color: white;
+        height: fit-content;
+        margin: 1rem;
+        padding: 10px 25px;
+        border: 0px;
+        border-radius:  40px;
+        box-shadow: 0px 0px 10px rgb(157, 157, 157);
+        cursor: pointer;
+        font-size: 1rem;
+        text-decoration: none;
+        transition-duration: 0.3s;
+    }
+    .section2 button:hover
+    {
+        box-shadow: 0px 0px 0px ;
+        background-color: rgb(0, 0, 162);
+    }
+
+    .line
+    {
+        height: 5px;
+        background-color: blue;        
+    }
+
+    @keyframes sec3anim
+    {
+        from{margin-top: 10rem;}
+        top{}
+    }
+    .section3
+    {
+        animation-name: sec3anim;
+        animation-duration: 0.5s;
+        background-color: white;
+        margin: 6rem;
+        box-shadow: 0px 0px 5px grey;
+        border-radius: 15px 0px;
+
+    }
+    @keyframes anim2
+    {
+        from{background-color: white;}
+        to{}
+    }
+    .section3 p
+    {
+        
+        animation-name: anim2;
+        animation-duration: 2s;
+        transition:all ease;
+        padding:  2rem;
+        background-color: grey;
+        border-radius: 15px 0px;
+        color: white;
+        text-align: center;
+    }
+    @keyframes sec4anim
+    {
+        from{color: rgb(255, 255, 255); font-size: 1rem;}
+        to{color: blue;}
+    }
+    .section4
+    {
+        animation-name: sec4anim;
+        animation-duration: 2s;
+        transition:all ease;
+        background-color: white;
+        height: fit-content;
+        color:  rgb(0, 0, 192);
+        text-align: center;
+        font-size: 2rem;
+    }
+    .section4 p{
+        color: grey;
+        font-size: 1.3rem;
+    }
+
+    .insta
+    {
+        cursor: pointer;
+        width: 100%;
+        height: fit-content;
+        padding: 1rem;
+        background-color: rgb(218, 65, 131);
+        text-align: center;
+        color: rgb(230, 230, 230);
+        font-size: large;
+        border:solid 0px;
+    }
+    .linkedin
+    {
+
+        width: 100%;
+        height: fit-content;
+        padding: 1rem;
+        text-align: center;
+        background-color: rgb(84, 137, 197);
+        color: rgb(230, 230, 230);
+        font-size: large;
+        border:solid 0px;
+    }.twitter
+    {
+        width: 100%;
+        height: fit-content;
+        padding: 1rem;
+        text-align: center;
+        background-color: rgb(84, 84, 175);
+        color: rgb(230, 230, 230);
+        font-size: large;
+        border:solid 0px;
+    }
+
+    
+    
+</style>
+
+
+</head>
+
+
+<body>
+    <div class="mainpage">
+        
+        <div class="section1">
+            <img src="logo.png" alt="ecell">
+        </div>
+        <div class="section2">
+            
+            <h1>CONGRATULATIONS!</h1>
+            <h2> WELCOME TO ENTREPRENEURSHIP CELL
+                FoET, UNIVERSTIY OF LUCKNOW
+            </h2>
+            <p>
+                We are pleased to extend the following Offer Letter to you.
+                You have been selected as a new Member at E-cell FoET, Universtiy of Lucknow. 
+                We believe that your knowledge, skills and experience would be an 
+                ideal fit for the Working in our Team. 
+                We hope that you will enjoy your role and make a significant contribution to 
+                the overall success of our Student-run Organization.
+                Kindly Find your Offer Letter below and Share it on your LinkedIn Profile and 
+                Other Social Media Platform by mentioning E-cell, FoET, UoL.
+            </p>
+            <button>
+                Download
+            </button>
+        </div>
+        <div class="line"></div>
+
+        <div class="section3">
+            <p>
+                "People often find it a matter of shame to admit 
+                if they do something wrong, but Acceptance of 
+                mistakes help to build a good personality. 
+                The driving force behind the Establishment of Entrepreneurship Cell 
+                was to Create an Entrepreneurial Environment on our University Campus.
+                I believe that you will add value to our student-run organization,
+                Apply your creative Ideas, build Solutions and improve yourself !" 
+                <br><br>
+                <b>Abhishek Chaurasiya<br>
+                <b>PRESIDENT, E-CELL
+            </p>
+        </div>
+        <div class="section4">
+            We Are Live<br>NOW!<br>
+            <p>Find Us at</p>
+        </div>
+        <div style="text-align: center; padding: 0.5rem;">
+            <a style="text-decoration: none; font-size: 1.5rem;"  href="https://www.ecellfoet.com/"> www.ecellfoet.com</a>
+            <p style="color:grey; font-size: 1.3rem;"> 
+            or connect on <br> Social Media
+            </p>
+        </div>
+        <button class="insta" 
+         onclick="window.location.href = 'https:www.instagram.com/ecellfoet/?igshid=OGQ2MjdiOTE%3D%2F';">    
+            <img style="display: block; height:78px; width: 78px; margin-left: auto; margin-right: auto;" 
+            src="icons8-instagram-50.png">
+            <a style="text-decoration: none; color:rgb(227, 227, 227); font-size: 1rem;" href="">Instagram</a>
+        </button>
+        <button class="linkedin"
+        onclick="window.location.href= 'https:twitter.com/e_foet?t=1OjnQpuhv8WVt8uvEglcOQ&s=09/'">
+            <img style="display:block; height: 78px; width: 78px; margin-left: auto; margin-right: auto;" 
+            src="icons8-linkedin-2-30.png">
+            <a style="text-decoration: none; color:rgb(227, 227, 227); font-size: 1rem;" href="">LinkedIn</a>
+        </button>
+        <button class="twitter"
+        onclick="window.location.href= 'https:twitter.com/e_foet?t=1OjnQpuhv8WVt8uvEglcOQ&s=09/'">
+            <img style="display: block; height: 78px; width: 78px; margin-left: auto; margin-right: auto;" 
+            src="icons8-twitter-50.png">
+            <a style="text-decoration: none; color:rgb(233, 233, 233); font-size: 1rem;"href="">Twitter </a>
+        </button>
+
+    </div>
+
+    
+
+</body>
+
+</html>
